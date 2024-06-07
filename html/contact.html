@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <link href = "../css/style.css" rel = "stylesheet" type = "text/css">
+        <meta charset = "utf-8">
+        
+        <title>Dom McCollum | Contact Me</title>
+
+    </head>
+
+    <body>
+
+        <h1>
+            Contact Me
+        </h1>
+
+        <h2>
+            Whether you use the form provided or the media links at the bottom,
+            <br>
+            I appreciate your time and will respond as soon as I can.
+        </h2>
+
+        <nav class = "stickyNav">
+
+            <a href = "index.html" title = "Homepage" class = "stickyNav">
+                <img src = "../images/homeButton.png" alt = "The home icon. Follow the link to access the homepage" class = "stickyNav"/>
+            </a>
+
+            <a href = "about.html" title = "About Me" class = "stickyNav">
+                <img src = "../images/aboutLink.jpg" alt = "A picture of me, Dom McCollum. Follow the link to the About Me page." class = "stickyNav"/>
+            </a>
+
+            <a href = "portfolio.html" title = "My Portfolio" class = "stickyNav">
+                <img src = "../images/portfolioLink.png" alt = "A picture showing a selction of my work. Follow the link to see my portfolio" class = "stickyNav"/>
+            </a>
+
+        </nav>
+
+        <form action = "thankyouRedirect.php" method = "POST">
+
+            <input type = "text" name = "Name" placeholder = "Name, just your first name is fine!" required>
+            <input type = "text" name = "Contact" placeholder = "Contact info. Phone, email, Discord, whatever you prefer!" required>
+            <input type = "text" name = "Subject" placeholder = "Subject" required>
+            <textarea name = "Message" placeholder = "Your message..." required></textarea>
+            <input type = "submit" name = "Send" value = "Send" title = "Send message">
+            
+        </form>
+
+        <nav class = "socialMedia">
+
+            <a href = "https://www.linkedin.com/in/dominic-mccollum" title = "Dom's LinkedIn profile" target = "_blank" class = "socialMedia">
+                <img src = "../images/linkedIn.png" alt = "The LinkedIn logo. Follow the link to Dom's LinkedIn profile" class = "socialMedia"/>
+                <h3 class = "socialMedia">My LinkedIn profile</h3>
+            </a>
+
+            <a href = "mailto:dom.mccollum@outlook.com?subject=Please include a subject" title = "Email Dom" class = "socialMedia">
+                <img src = "../images/outlook.png" alt = "The Outlook logo. Follow the link to send Dom an email." class = "socialMedia"/>
+                <h3 class = "socialMedia">Email Me</h3>
+            </a>
+
+            <a href = "https://www.facebook.com/DMC89" title = "Dom's Facebook profile" target = "_blank" class = "socialMedia">
+                <img src = "../images/facebook.png" alt = "The Facebook logo. Follow the link to Dom's Facebook profile." class = "socialMedia"/>
+                <h3 class = "socialMedia">My Facebook profile</h3>
+            </a>
+
+        </nav>
+
+        <h4 id = "socMedDisclaimer">
+            (Some social media sites require a valid login to access profiles)
+        </h4>
+        
+        <footer>
+            Copyright, Dom McCollum 2020
+        </footer>
+    </body>
+
+</html >

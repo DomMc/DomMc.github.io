@@ -1,0 +1,465 @@
+/* Imported Files */
+
+    @import url('https://fonts.googleapis.com/css?family=Gelasio&display=swap');    /* Gelasio, supplied by Google Fonts. */
+
+/* Universal */
+    /* Body and background */
+
+        body
+        {
+            margin: auto;
+            background-color: #ebf9ff;
+            text-align: center;
+        }
+        
+        body.document
+        {
+            background-color: #fff;
+            text-align: start;
+        }
+        
+    /* Headings */
+        
+        h1
+        {
+            font-family: 'Gelasio', serif;
+            font-size: calc(3vw + 20px);
+            margin: 2.5% auto;
+        }
+        h2
+        {
+            font-family: 'Gelasio', serif;
+            font-size: calc(0.75vw + 15px);
+            margin: 3.5% 0%;
+        }
+        h3
+        {
+            font-family: "Gelasio", serif;
+            font-size: calc(0.5vw + 10px);
+            margin: auto;
+            padding: 2%;
+        }
+        
+    /* Footer */
+        
+        footer
+        {
+            font-family: 'Gelasio', serif;
+            padding: 2%;
+        }
+
+    /* Text */
+
+        p
+        {
+            font-family: 'Gelasio', serif;
+            font-size: calc(0.5vw + 10px);
+            margin: auto;
+            max-width: 75%;
+            height: auto;
+        }
+        
+    /* Containers */
+        
+        div
+        {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+    /* iframes */
+        
+        iframe
+        {
+            position: relative;
+            margin: 2% auto;
+            min-width: 45%;
+            min-height: 700px;
+            border-radius: 8px;
+        }
+        
+    /* Videos */
+    
+        video
+        {
+            position: relative;
+            margin: auto;
+            border-radius: 8px;
+            max-width: 45%;
+            height: auto;
+        }
+    
+    /* Buttons */
+
+        button
+        {
+            font-family: 'Gelasio', serif;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #45a0d0;
+            color: white;
+            cursor: pointer;
+            box-shadow: 0 5px 30px #88bbd6;
+        }
+
+    /* Different media settings*/
+
+        @media only screen and (max-width: 1200px)
+        {
+            video
+            {
+                min-width: 75%;
+                max-width: 75%;
+            }
+            iframe
+            {
+                width: 100%;
+            }
+            p.SBS
+            {
+                min-width: 75%;
+                max-width: 75%;
+            }
+            p.sprite
+            {
+                min-width: 75%;
+                max-width: 75%;
+            }
+            img.portfolio_sge
+            {
+                min-width: 75%;
+                margin: auto;
+            }
+            img.portfolio_SF
+            {
+                min-width: 75%;
+                margin: auto;
+            }
+            img.portfolio
+            {
+                min-width: 75%;
+                margin: auto;
+            }
+            form
+            {
+                min-width: 75%;
+            }
+        }
+        
+/* Page specific */
+        
+    /* about */
+        
+        
+        
+    /* contact */
+        
+        h3.socialMedia
+        {
+            font-size: calc(0.75vw + 10px);
+            color: #000;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: auto;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: 0.25s ease;
+        }
+        h4#socMedDisclaimer
+        {
+            font-family: 'Gelasio', serif;
+            font-size: calc(0.375vw + 10px);
+        }
+        img.socialMedia
+        {
+            max-width: 100%;
+            height: auto; 
+            border-radius: 20%;
+            box-shadow: 0 5px 30px #88bbd6;
+            background: #fff;
+            padding: 4%;
+            border: 1px solid #999;
+        }
+        nav.socialMedia
+        {
+            display: inline-flex;
+            flex-wrap: wrap;
+            padding: 2%;
+        }
+        a.socialMedia
+        {
+            width: 150px;
+            height: 150px;
+            margin: 0 30px;
+            position: relative;
+        }
+        /* Form */
+            form
+            {
+                position: inherit;
+                max-width: 35%;
+                height: auto;
+                margin: -12.5% auto;
+                padding: 12% 0% 15%;
+            }    
+            input[type = text], textarea
+            {
+                font-family: 'Gelasio', serif;
+                box-sizing: border-box;
+                width: 100%;
+                margin: 0.5%;
+                padding: 1%;
+                border: 1px solid #999;
+                border-radius: 5px;
+            }
+            textarea
+            {
+                font-family: 'Gelasio', serif;
+                box-sizing: border-box;
+                width: 100%;
+                height: 200px;
+                margin: 0.5%;
+                padding: 1%;
+                border: 1px solid #999;
+                border-radius: 5px;
+            }
+            input[type = submit]
+            {
+                font-family: 'Gelasio', serif;
+                position: inherit;
+                margin-top: 2%;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 5px;
+                background-color: #45a0d0;
+                color: white;
+                cursor: pointer;
+                box-shadow: 0 5px 30px #88bbd6;
+            }
+        
+    /* index */
+        
+        h3.linkTextHomePage
+        {
+            font-size: calc(0.75vw + 10px);
+            color: #000;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: 0.25s ease;
+        }
+        img.linkHomePage
+        {
+            max-width: 100%;
+            height: auto; 
+            border-radius: 5%;
+            margin: inherit;
+            box-shadow: 0 5px 70px #88bbd6;
+            background: #fff;
+            padding: 3%;
+            border: 1px solid #999;
+        }
+        nav.homePage
+        {
+            display: inline-flex;
+            flex-wrap: wrap;
+            width: 100%;
+            max-width: none;
+            padding: 5% 0%;
+            overflow: hidden;
+        }
+        a.homePage
+        {
+            width: 424px;
+            height: 424px;
+            margin: auto;
+            position: relative;
+        }
+
+    /* portfolio */
+        
+        div.portfolio
+        {
+            margin:auto;
+        }
+        p.SBS
+        {
+            max-width: 40%;
+        }
+        p.sprite
+        {
+            max-width: 40%;
+        }
+        img.portfolio
+        {
+            margin: auto;
+            padding: 2%;
+            border-radius: 8px;
+            display: flex;
+            min-width: 75%;
+        }
+        img.portfolio_sge
+        {
+            margin:auto;
+            padding: 2%;
+            border-radius: 8px;
+            display: flex;
+            height: auto;
+            max-width: 50%;
+        }
+        img.portfolio_SF
+        {
+            margin:auto;
+            padding: 2%;
+            border-radius: 8px;
+            display: flex;
+            height: auto;
+            max-width: 46%;
+        }
+        
+    /* thankyouRedirect*/
+        
+        h1.thanksPage
+        {
+            font-size: calc(2vw + 30px);
+            margin: 20.5% auto;
+        }
+        
+/* Documents */
+
+    img.document
+    {
+        width:100%;
+        height: auto;
+    }
+    button.download
+    {
+        font-family: 'Gelasio', serif;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 5px;
+        background-color: #45a0d0;
+        color: white;
+        cursor: pointer;
+        box-shadow: 0 5px 30px #88bbd6;
+        position: sticky;
+        top: 0;
+    }
+
+/* Main navigation */
+    
+    img.stickyNav
+    {
+        max-width: 60px;
+        height: auto; 
+        border-radius: 50%;
+        border:1px solid #999;
+        box-shadow: 0 5px 30px #88bbd6;
+    }
+    nav.stickyNav
+    {
+        display: grid;
+        width: 5%;
+        height: auto;
+        margin: 0.5%;
+        position: fixed;
+        top: 10%;
+        z-index: 1;
+    }
+    a.stickyNav
+    {
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+/* Accesibility and haptic feedback */
+
+    /* stickyNav Buttons */
+
+        a:hover img.stickyNav
+        {
+            opacity: 0.2;
+            transition: 0.25s ease;
+        }
+
+        a:focus img.stickyNav
+        {
+            opacity: 0.2;
+            transition: 0.25s ease;
+        }
+
+    /* Homepage and Social Media Buttons */
+
+        a:hover img.linkHomePage, a:hover img.socialMedia
+        {
+            transform: scale(1.02);
+            opacity: 0.15;
+            transition: 0.25s ease;
+        }
+
+        a:focus img.linkHomePage, a:focus img.socialMedia
+        {
+            transform: scale(1.02);
+            opacity: 0.15;
+            transition: 0.25s ease;
+        }
+
+        a:hover h3.linkTextHomePage, a:hover h3.socialMedia
+        {
+            opacity: 1;
+        }
+
+        a:focus h3.linkTextHomePage, a:focus h3.socialMedia
+        {
+            opacity: 1;
+        }
+
+    /* Contact Form */
+
+        input[type = submit]:hover
+        {
+            background-color: #6bbaa7;
+            box-shadow: 0 5px 30px #6bbaa7;
+        }
+
+        input[type = submit]:focus
+        {
+            background-color: #6bbaa7;
+            box-shadow: 0 5px 30px #6bbaa7;
+        }
+
+    /* Continue Button */
+
+        button.continue:hover
+        {
+            background-color: #6bbaa7;
+            box-shadow: 0 5px 30px #6bbaa7;
+        }
+
+        button.continue:focus
+        {
+            background-color: #6bbaa7;
+            box-shadow: 0 5px 30px #6bbaa7;
+        }
+
+    
+    /* Download Buttons */
+
+        button:hover
+        {
+            background-color: #6bbaa7;
+            box-shadow: 0 5px 30px #6bbaa7;
+        }
+
+        button:focus
+        {
+            background-color: #6bbaa7;
+            box-shadow: 0 5px 30px #6bbaa7;
+        }
