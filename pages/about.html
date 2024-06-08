@@ -1,58 +1,37 @@
 <!DOCTYPE html>
 <html>
-
     <head>
-
-        <link href = "../css/style.css" rel = "stylesheet" type = "text/css">
-        <meta charset = "utf-8">
-
+        <meta charset="utf-8">
+        <link href="../css/style.css" rel="stylesheet" type="text/css">
+        <script src="../components/footer.js" type="text/javascript" defer></script>
+        <script src="../components/navbar.js" type="text/javascript" defer></script>
         <title>Dom McCollum | About Me</title>
-
     </head>
 
     <body>
-
-        <h1>
-            About Me
-        </h1>
-
-        <h2>
-            This page is all about me! There's a brief introduction video and a
-            <br>
-            CV which is viewable here or can be downloaded as a PDF.
-        </h2>
-
-        <nav class = "stickyNav">
-
-            <a href = "index.html" title = "Homepage" class = "stickyNav">
-                <img src = "../images/homeButton.png" alt = "The home icon. Follow the link to access the homepage" class = "stickyNav"/>
-            </a>
-
-            <a href = "contact.html" title = "Contact Me" class = "stickyNav">
-                <img src = "../images/contactLink.png" alt = "A picture of contact options. Follow the link to the Contact Me page." class = "stickyNav"/>
-            </a>
-
-            <a href = "portfolio.html" title = "My Portfolio" class = "stickyNav">
-                <img src = "../images/portfolioLink.png" alt = "A picture showing a selction of my work. Follow the link to see my portfolio" class = "stickyNav"/>
-            </a>
-
-        </nav>
-
+        <navbar-component></navbar-component>
+        <h1>About me</h1>
         <div>
-
-            <video src="../videos/Welcome.mp4" controls>
-                Oops! Looks like your browser doesn't support HTML5 videos!
-            </video>
-
-            <iframe src = "cvDoc.html" frameborder="0.5">
+            <p class=sideBySide>
+                My career in games began after 11 years in the rail industry. Adapting for a new career was challenging, particularly retraining after so long
+                out of education, but I've enjoyed every day of it.
+                <br/><br/>
+                The focus of my degree was low level C++ programming using various API's. I have the most experience with Vulkan and DX12, but have worked with 
+                DX11, PS4 and PS5. My most notable university project involved a collaboration between Steel Minions (Sheffield Hallam University's game studio) 
+                and Sumo Digital Academy. Steel Minions produced 2 ports of Zool Redimensioned, 1 for PS4 and 1 for Vulkan. My team focused on the Vulkan port, 
+                and the project was a finalist at the TIGA UK Games Education Awards 2022. The PS4 port was released in May 2023 and is special for me as it was 
+                my first credit.
+                <br/><br/>
+                I've always been aware of how fortunate I am to have had the opportunities that I have, and making STEM careers accessible for everyone is 
+                something that I'm passionate about. I've spoken at events, some of which had 100+ attendees, ranging from open days to the Games Education 
+                Summit, and I’ve delivered workshops in secondary schools. If you have an event that needs someone keen to encourage people into tech careers, 
+                then feel free to reach out!
+                <br/><br/>
+            </p>
+            <iframe src = "cvDoc.html">
             </iframe>
-
         </div>
-
-        <footer>
-            Copyright, Dom McCollum 2020
-        </footer>
-
+        <footer-component></footer-component>
     </body>
-
 </html>
+

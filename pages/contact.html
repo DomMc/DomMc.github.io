@@ -2,12 +2,10 @@
 <html>
 
     <head>
-
         <link href = "../css/style.css" rel = "stylesheet" type = "text/css">
         <meta charset = "utf-8">
-        
+        <script src="components/footer.js" type="text/javascript" defer></script>
         <title>Dom McCollum | Contact Me</title>
-
     </head>
 
     <body>
@@ -24,7 +22,7 @@
 
         <nav class = "stickyNav">
 
-            <a href = "index.html" title = "Homepage" class = "stickyNav">
+            <a href = "../index.html" title = "Homepage" class = "stickyNav">
                 <img src = "../images/homeButton.png" alt = "The home icon. Follow the link to access the homepage" class = "stickyNav"/>
             </a>
 
@@ -50,7 +48,7 @@
 
         <nav class = "socialMedia">
 
-            <a href = "https://www.linkedin.com/in/dominic-mccollum" title = "Dom's LinkedIn profile" target = "_blank" class = "socialMedia">
+            <a href = "https://www.linkedin.com/in/dommccollum" title = "Dom's LinkedIn profile" target = "_blank" class = "socialMedia">
                 <img src = "../images/linkedIn.png" alt = "The LinkedIn logo. Follow the link to Dom's LinkedIn profile" class = "socialMedia"/>
                 <h3 class = "socialMedia">My LinkedIn profile</h3>
             </a>
@@ -60,20 +58,17 @@
                 <h3 class = "socialMedia">Email Me</h3>
             </a>
 
-            <a href = "https://www.facebook.com/DMC89" title = "Dom's Facebook profile" target = "_blank" class = "socialMedia">
-                <img src = "../images/facebook.png" alt = "The Facebook logo. Follow the link to Dom's Facebook profile." class = "socialMedia"/>
-                <h3 class = "socialMedia">My Facebook profile</h3>
-            </a>
-
         </nav>
 
         <h4 id = "socMedDisclaimer">
             (Some social media sites require a valid login to access profiles)
         </h4>
-        
+
         <footer>
             Copyright, Dom McCollum 2020
+            <script>
+                new Date().getFullYear() > 2020 && document.write("- " + new Date().getFullYear());
+            </script>
         </footer>
     </body>
-
 </html >

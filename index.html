@@ -1,45 +1,35 @@
 <!DOCTYPE html>
 <html>
-
-    <head>
-        <link href = "css/style.css" rel = "stylesheet" type = "text/css">
+    <head>        
         <meta charset = "utf-8">
-        
+        <link href = "css/style.css" rel = "stylesheet" type = "text/css">
+        <script src = "components/footer.js" type="text/javascript" defer></script>
         <title>Dom McCollum | Homepage</title>
-
     </head>
 
     <body>
-
         <h1>Dom McCollum</h1>
-        
-        <h2>
-            Welcome to my homepage!<br>Contact me, learn about my career so far and view my most recent work by using the links below.
-        </h2>
 
-        <nav class = "homePage">
+        <h2>Thanks for visiting my website.<br>Use the links below to read about my recent work.</h2>
 
-            <a href = "html/contact.html" title = "Contact Me" class = "homePage">
-                <img src = "images/contactLink.png" alt = "A picture of contact options. Follow the link to the Contact Me page." class = "linkHomePage"/>
-                <h3 class = "linkTextHomePage">Contact Me</h3>
+        <nav class="homePage">
+            <a href="pages/about.html" title="About Me" class="homePage">
+                <img src="images/aboutLink.jpg" alt="A picture of me, Dom McCollum. Follow the link to the About Me page." class="linkHomePage" />
+                <h3 class="linkTextHomePage">About Me</h3>
             </a>
 
-            <a href = "html/about.html" title = "About Me" class = "homePage">
-                <img src = "images/aboutLink.jpg" alt = "A picture of me, Dom McCollum. Follow the link to the About Me page." class = "linkHomePage"/>
-                <h3 class = "linkTextHomePage">About Me</h3>
+            <a href="pages/portfolio.html" title="My Portfolio" class="homePage">
+                <img src="images/portfolioLink.png" alt="A picture showing a selction of my work. Follow the link to see my portfolio" class="linkHomePage" />
+                <h3 class="linkTextHomePage">My Portfolio</h3>
             </a>
-
-            <a href = "html/portfolio.html" title = "My Portfolio" class = "homePage">
-                <img src = "images/portfolioLink.png" alt = "A picture showing a selction of my work. Follow the link to see my portfolio" class = "linkHomePage"/>
-                <h3 class = "linkTextHomePage">My Portfolio</h3>
+            
+            <a href="pages/contact.html" title="Contact Me" class="homePage">
+                <img src="images/contactLink.png" alt="A picture of contact options. Follow the link to the Contact Me page." class="linkHomePage" />
+                <h3 class="linkTextHomePage">Contact Me</h3>
             </a>
-
         </nav>
 
-        <footer>
-            Copyright &copy; Dom McCollum 2020
-        </footer>
-
+        <footer-component></footer-component>
     </body>
-
 </html>
+
