@@ -1,1 +1,66 @@
 
+nav.contact 
+{
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin: 5% auto;
+}
+
+h3.contact
+{
+    font-size: calc(0.75vw + 10px);
+    color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: auto;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.25s ease;
+}
+
+img.contact
+{
+    max-width: 100%;
+    height: auto;
+    border-radius: 20%;
+    box-shadow: 0 5px 30px #88bbd6;
+    background: #fff;
+    margin: auto;
+    border: 1px solid #999;
+    padding: 1%;
+}
+
+a.contact
+{
+    width: 150px;
+    height: 150px;
+    margin: 0 30px;
+    position: relative;
+}
+
+    a:hover img.contact
+    {
+        transform: scale(1.02);
+        opacity: 0.15;
+        transition: 0.25s ease;
+    }
+
+    a:focus img.contact
+    {
+        transform: scale(1.02);
+        opacity: 0.15;
+        transition: 0.25s ease;
+    }
+
+    a:hover h3.contact
+    {
+        opacity: 1;
+    }
+
+    a:focus h3.contact
+    {
+        opacity: 1;
+    }
+

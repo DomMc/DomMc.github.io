@@ -4,16 +4,16 @@ div.index
     margin: 5% auto;
 }
 
-p.index 
+p.index
 {
-    margin: auto 8%;
+    margin: auto 5%;
     max-width: 45%;
     height: auto;
 }
 
 img.index 
 {
-    margin: auto 5%;
+    margin: auto;
     max-width: 400px;
     max-height: 400px;
     border-radius: 50%;
@@ -21,7 +21,7 @@ img.index
 
 @media only screen and (max-width: 1200px) 
 {
-    p.index 
+    p.index
     {
         min-width: 90%;
     }

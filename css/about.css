@@ -20,7 +20,6 @@ iframe.about
     p.about
     {
         min-width: 90%;
-        font-size: calc(0.75vw + 12.5px);
     }
 
     iframe.about
