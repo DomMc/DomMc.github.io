@@ -125,31 +125,6 @@ a.download
         box-shadow: 0 5px 30px #6bbaa7;
     }
 
-/* Social media links =================================================================================*/
-a:hover a:hover img.socialMedia
-{
-    transform: scale(1.02);
-    opacity: 0.15;
-    transition: 0.25s ease;
-}
-
-a:focus a:focus img.socialMedia
-{
-    transform: scale(1.02);
-    opacity: 0.15;
-    transition: 0.25s ease;
-}
-
-a:hover a:hover h3.socialMedia
-{
-    opacity: 1;
-}
-
-a:focus h3.linkTextHomePage, a:focus h3.socialMedia
-{
-    opacity: 1;
-}
-
 /* Download link ======================================================================================*/
 
 a.download 
