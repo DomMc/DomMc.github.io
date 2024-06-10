@@ -22,5 +22,11 @@ iframe.about
         min-width: 90%;
         font-size: calc(0.75vw + 12.5px);
     }
+
+    iframe.about
+    {
+        min-width: 100%;
+        margin: 5% auto;
+    }
 }
 

@@ -152,16 +152,17 @@ a:focus h3.linkTextHomePage, a:focus h3.socialMedia
 
 /* Download link ======================================================================================*/
 
-li a 
+a.download 
 {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    max-width: 20%;
 }
 
-    li a:hover 
+    a:hover a.download
     {
         background-color: #6bbaa7;
     }
