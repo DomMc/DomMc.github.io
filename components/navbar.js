@@ -12,7 +12,7 @@ class Navbar extends HTMLElement
     connectedCallback()
     {
         /* The basic link syntax */
-        var homeLink = `<li><a href="dommc.github.io" title="Home"><strong>Home</strong></a></li>`;
+        var homeLink = `<li><a href="../index.html" title="Home"><strong>Home</strong></a></li>`;
         var aboutLink = `<li><a href="about.html" title="About"><strong>About</strong></a></li>`;
         var portfolioLink = `<li><a href="portfolio.html" title="Portfolio"><strong>Portfolio</strong></a></li>`;
         var contactlink = `<li><a href="contact.html" title="Contact"><strong>Contact</strong></a></li>`;
@@ -20,7 +20,7 @@ class Navbar extends HTMLElement
         /* Changes the link styling to highlight the active page to the user, the home page requires additional changes */
         if (document.body.id == 0)
         {
-            homeLink = `<li><a href="dommc.github.io" title="Home" class="active"><strong>Home</strong></a></li>`;
+            homeLink = `<li><a href="index.html" title="Home" class="active"><strong>Home</strong></a></li>`;
             aboutLink = `<li><a href="pages/about.html" title="About"><strong>About</strong></a></li>`;
             portfolioLink = `<li><a href="pages/portfolio.html" title="Portfolio"><strong>Portfolio</strong></a></li>`;
             contactlink = `<li><a href="pages/contact.html" title="Contact"><strong>Contact</strong></a></li>`;
