@@ -18,7 +18,7 @@ class Navbar extends HTMLElement
         var contactlink = `<li><a href="contact.html" title="Contact"><strong>Contact</strong></a></li>`;
 
         /* Changes the link styling to highlight the active page to the user, the home page requires additional changes */
-        if (window.location.href.includes("index"))
+        if (Document.name.includes("index"))
         {
             homeLink = `<li><a href="index.html" title="Home" class="active"><strong>Home</strong></a></li>`;
             aboutLink = `<li><a href="pages/about.html" title="About"><strong>About</strong></a></li>`;
@@ -26,17 +26,17 @@ class Navbar extends HTMLElement
             contactlink = `<li><a href="pages/contact.html" title="Contact"><strong>Contact</strong></a></li>`;
         }
 
-        if (window.location.href.includes("about"))
+        if (Document.name.includes("about"))
         {
             aboutLink = `<li><a href="about.html" title="About" class="active"><strong>About</strong></a></li>`;
         }
 
-        if (window.location.href.includes("portfolio"))
+        if (Document.name.href.includes("portfolio"))
         {
             portfolioLink = `<li><a href="portfolio.html" title="Portfolio" class="active"><strong>Portfolio</strong></a></li>`;
         }
 
-        if (window.location.href.includes("contact"))
+        if (Document.name.href.includes("contact"))
         {
             contactlink = `<li><a href="contact.html" title="Contact" class="active"><strong>Contact</strong></a></li>`;
         }
