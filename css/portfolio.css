@@ -1,0 +1,42 @@
+
+p.portfolio
+{
+    margin: auto 2.5%;
+    max-width: 45%;
+    height: auto;
+}
+
+video.portfolio 
+{
+    position: relative;
+    margin: auto 2.5%;
+    max-width: 45%;
+    border-radius: 8px;
+}
+
+img.portfolio
+{
+    margin: auto 2.5%;
+    max-width: 45%;
+    border-radius: 8%;
+}
+
+@media only screen and (max-width: 1200px) 
+{
+    p.portfolio
+    {
+        min-width: 90%;
+    }
+
+    video.portfolio
+    {
+        min-width: 90%;
+        margin: 5% auto;
+    }
+
+    img.portfolio 
+    {
+        margin: 5% auto;
+    }
+}
+
