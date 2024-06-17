@@ -37,6 +37,7 @@ img.portfolio
     img.portfolio 
     {
         margin: 5% auto;
+        min-width: 90%;
     }
 }
 
