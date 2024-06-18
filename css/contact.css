@@ -42,7 +42,7 @@ a.contact
 
     a:hover img.contact
     {
-        transform: scale(1.02);
+        transform: scale(1.1);
         opacity: 0.15;
         transition: 0.25s ease;
     }
