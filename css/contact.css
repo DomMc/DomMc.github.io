@@ -64,3 +64,11 @@ a.contact
         opacity: 1;
     }
 
+@media screen and (max-width: 600px) 
+{
+    h3.contact 
+    {
+        font-size: calc(1.0vw + 16px);
+    }
+}
+

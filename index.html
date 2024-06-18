@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <link href="css/common.css" rel="stylesheet" type="text/css">
-        <link href="css/index.css" rel="stylesheet" type="text/css">
-        <script src="components/footer.js" type="text/javascript" defer></script>
-        <script src="components/navbar.js" type="text/javascript" defer></script>
-        <title>Dom McCollum | Home</title>
-    </head>
+<head>
+    <meta charset="utf-8">
+    <link href="css/common.css" rel="stylesheet" type="text/css">
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+    <script src="components/footer.js" type="text/javascript" defer></script>
+    <script src="components/navbar.js" type="text/javascript" defer></script>
+    <title>Dom McCollum | Home</title>
+</head>
 
-    <body id="0">
+    <!-- Use onmouseup to avoid reacting to link clicks in the navigation menu itself. -->
+    <body id="0" onmouseup="Navbar.HideVerticalMenu()" onresize="Navbar.HideVerticalMenu()">
         <navbar-component></navbar-component>
         <h1>Dom McCollum</h1>
 

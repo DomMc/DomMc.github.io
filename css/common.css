@@ -36,7 +36,7 @@ h2
 
 h3
 {
-    font-family: "Gelasio", serif;
+    font-family: 'Gelasio', serif;
     font-size: calc(0.5vw + 10px);
     margin: auto;
     padding: 2%;
@@ -105,42 +105,86 @@ a.download
     }
 
 /* Navigation bar =====================================================================================*/
-ul 
+
+div.nav 
 {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
     background-color: #45a0d0;
+    overflow: hidden;
+    z-index: 1;
 }
 
-li
-{
-    float: left;
-    width: 25%;
-}
-
-    li a 
+    div.nav .icon
     {
+        display: none;
+    }
+
+    div.nav a 
+    {
+        float: left;
         display: block;
         color: white;
         text-align: center;
-        padding: 18px;
+        padding: 18px 0px;
         text-decoration: none;
         font-family: 'Gelasio', serif;
         font-size: calc(0.5vw + 10px);
+        width: 25%;
     }
 
-        li a:hover
+        div.nav a:hover 
+        {
+            background-color: #6bbaa7;
+        }
+
+        div.nav a:focus 
         {
             background-color: #6bbaa7;
         }
 
 /* The active page link will be highlighted to show the user where they are but won't respond to cursor events */
-.active
+.active 
 {
     background-color: #04AA6D;
     pointer-events: none;
     cursor: default;
+}
+
+
+@media screen and (max-width: 600px) 
+{
+    div.nav a:is(:nth-child(4))
+    {
+        display: none;
+    }
+
+    div.nav a.icon 
+    {
+        display: block;
+    }
+
+    div.nav a 
+    {
+        font-size: calc(0.75vw + 12px);
+    }
+
+    /* The responsive attribute is added when the user clicks the burger menu. */
+    div.nav.responsive
+    {
+        position: relative;
+        display: block;
+        width: 100%;
+    }
+
+        div.nav.responsive a 
+        {
+            float: none;
+            display: block;
+            width: 100%;
+        }
+
+    div.nav.responsive a.icon
+    {
+        display: none;
+    }
 }
 

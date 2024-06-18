@@ -9,7 +9,8 @@
         <title>Dom McCollum | Contact</title>
     </head>
 
-    <body id="3">
+    <!-- Use onmouseup to avoid reacting to link clicks in the navigation menu itself. -->
+    <body id="3" onmouseup="Navbar.HideVerticalMenu()" onresize="Navbar.HideVerticalMenu()">
         <navbar-component></navbar-component>
         <h1>Contact me</h1>
         <h2>Contact me via the links below. If we met somewhere then lead with that please!</h2>

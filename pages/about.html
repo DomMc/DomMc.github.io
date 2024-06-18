@@ -9,7 +9,8 @@
         <title>Dom McCollum | About</title>
     </head>
 
-    <body id="1">
+    <!-- Use onmouseup to avoid reacting to link clicks in the navigation menu itself. -->
+    <body id="1" onmouseup="Navbar.HideVerticalMenu()" onresize="Navbar.HideVerticalMenu()">
         <navbar-component></navbar-component>
         <h1>About me</h1>
         <div>
