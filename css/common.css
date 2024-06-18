@@ -23,21 +23,21 @@ div
 h1
 {
     font-family: 'Gelasio', serif;
-    font-size: calc(3vw + 20px);
+    font-size: 5vw;
     margin: 2.5% auto;
 }
 
 h2
 {
     font-family: 'Gelasio', serif;
-    font-size: calc(0.75vw + 15px);
+    font-size: 2.5vw;
     margin: 3.5% 0%;
 }
 
 h3
 {
     font-family: 'Gelasio', serif;
-    font-size: calc(0.5vw + 10px);
+    font-size: 2vw;
     margin: auto;
     padding: 2%;
 }
@@ -45,25 +45,73 @@ h3
 p 
 {
     font-family: 'Gelasio', serif;
-    font-size: calc(0.75vw + 12.5px);
+    font-size: 1.5vw;
 }
-                
-footer
+
+footer 
 {
     font-family: 'Gelasio', serif;
+    font-size: 1.5vw;
     padding: 2%;
 }
 
+@media screen and (max-width: 600px) 
+{
+    h1 
+    {
+        font-size: 10vw;
+    }
+
+    h2 
+    {
+        font-family: 'Gelasio', serif;
+        font-size: 5vw;
+        margin: 3.5% 0%;
+    }
+
+    h3 
+    {
+        font-family: 'Gelasio', serif;
+        font-size: 4vw;
+        margin: auto;
+        padding: 2%;
+    }
+
+    p 
+    {
+        font-family: 'Gelasio', serif;
+        font-size: 3.5vw;
+    }
+
+    footer 
+    {
+        font-family: 'Gelasio', serif;
+        font-size: 3.5vw;
+        padding: 2%;
+    }
+}
+
 /* Documents ==========================================================================================*/
+
 img.document
 {
     width:100%;
     height: auto;
 }
-a.download
+
+@media screen and (max-width: 600px) 
+{
+    img.document 
+    {
+        width: 200%;
+    }
+}
+
+/* Download link ======================================================================================*/
+
+a.download 
 {
     font-family: 'Gelasio', serif;
-    padding: 12px 20px;
     border: none;
     border-radius: 5px;
     background-color: #45a0d0;
@@ -73,6 +121,10 @@ a.download
     position: sticky;
     top: 0;
     text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 18px;
+    max-width: 25%;
 }
 
     a.download:hover 
@@ -87,23 +139,6 @@ a.download
         box-shadow: 0 5px 30px #6bbaa7;
     }
 
-/* Download link ======================================================================================*/
-
-a.download 
-{
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    max-width: 20%;
-}
-
-    a:hover a.download
-    {
-        background-color: #6bbaa7;
-    }
-
 /* Navigation bar =====================================================================================*/
 
 div.nav 
@@ -113,7 +148,7 @@ div.nav
     z-index: 1;
 }
 
-    div.nav .icon
+    div.nav .icon 
     {
         display: none;
     }
@@ -127,7 +162,7 @@ div.nav
         padding: 18px 0px;
         text-decoration: none;
         font-family: 'Gelasio', serif;
-        font-size: calc(0.5vw + 10px);
+        font-size: 1vw;
         width: 25%;
     }
 
@@ -152,7 +187,7 @@ div.nav
 
 @media screen and (max-width: 600px) 
 {
-    div.nav a:is(:nth-child(4))
+    div.nav a:is(:nth-child(4)) 
     {
         display: none;
     }
@@ -164,11 +199,11 @@ div.nav
 
     div.nav a 
     {
-        font-size: calc(0.75vw + 12px);
+        font-size: 4vw;
     }
 
     /* The responsive attribute is added when the user clicks the burger menu. */
-    div.nav.responsive
+    div.nav.responsive 
     {
         position: relative;
         display: block;
@@ -182,9 +217,9 @@ div.nav
             width: 100%;
         }
 
-    div.nav.responsive a.icon
-    {
-        display: none;
-    }
+            div.nav.responsive a.icon 
+            {
+                display: none;
+            }
 }
 

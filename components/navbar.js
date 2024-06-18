@@ -56,20 +56,6 @@ class Navbar extends HTMLElement
                 break;
             case '3': // Contact page
                 contactlink = `<a href="contact.html" title="Contact" class="active"><strong>Contact</strong></a>`;
-
-                /*
-                    Constructs the navigation bar differently for the last page, so the active page is always shown
-                    in the main navigation bar.
-                */
-                this.innerHTML = '<div class="nav" id="navbar">'
-                    + homeLink
-                    + aboutLink
-                    + contactlink
-                    + portfolioLink
-                    + expandLink
-                    + '</div>';
-
-                return;
             default:
                 break;
         }

@@ -21,23 +21,23 @@ img.portfolio
     border-radius: 8%;
 }
 
-@media only screen and (max-width: 1200px) 
+@media only screen and (max-width: 600px) 
 {
     p.portfolio
     {
-        min-width: 90%;
+        min-width: 95%;
     }
 
     video.portfolio
     {
-        min-width: 90%;
+        min-width: 95%;
         margin: 5% auto;
     }
 
     img.portfolio 
     {
         margin: 5% auto;
-        min-width: 90%;
+        min-width: 95%;
     }
 }
 

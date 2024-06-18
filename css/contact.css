@@ -8,7 +8,7 @@ div.contact
 
 h3.contact
 {
-    font-size: calc(0.75vw + 10px);
+    font-size: 1vw;
     color: #000;
     position: absolute;
     top: 50%;
@@ -68,7 +68,7 @@ a.contact
 {
     h3.contact 
     {
-        font-size: calc(1.0vw + 16px);
+        font-size: 4vw;
     }
 }
 
