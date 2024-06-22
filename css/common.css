@@ -105,7 +105,7 @@ img.document
     height: auto;
 }
 
-@media screen and (max-width: 500px) 
+@media screen and (max-width: 500px)
 {
     img.document 
     {
@@ -118,7 +118,7 @@ img.document
 a.download 
 {
     font-family: 'Gelasio', serif;
-    font-size: 2vw;
+    font-size: 3vw;
     border: none;
     border-radius: 5px;
     background-color: #45a0d0;
@@ -171,7 +171,7 @@ div.nav
         padding: 18px 0px;
         text-decoration: none;
         font-family: 'Gelasio', serif;
-        font-size: 1vw;
+        font-size: 2vw;
         width: 25%;
     }
 
