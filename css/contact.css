@@ -64,7 +64,7 @@ a.contact
         opacity: 1;
     }
 
-@media screen and (max-width: 1300px) 
+@media screen and (max-width: 1000px) 
 {
     h3.contact 
     {

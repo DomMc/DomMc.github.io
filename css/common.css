@@ -56,7 +56,7 @@ footer
     padding: 2%;
 }
 
-@media screen and (max-width: 1300px) 
+@media screen and (max-width: 1000px) 
 {
     div
     {
@@ -105,7 +105,7 @@ img.document
     height: auto;
 }
 
-@media screen and (max-width: 600px) 
+@media screen and (max-width: 500px) 
 {
     img.document 
     {
@@ -194,7 +194,7 @@ div.nav
 }
 
 
-@media screen and (max-width: 1300px) 
+@media screen and (max-width: 1000px) 
 {
     div.nav 
     {
