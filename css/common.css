@@ -47,6 +47,8 @@ p
 {
     font-family: 'Gelasio', serif;
     font-size: 1.5vw;
+    max-width: 90%;
+    margin: auto;
 }
 
 footer 

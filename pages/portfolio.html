@@ -13,25 +13,165 @@
     <body id="2" onmouseup="Navbar.HideVerticalMenu()" onresize="Navbar.HideVerticalMenu()">
         <navbar-component></navbar-component>
 
-        <!-- TIGA nomination - Postgrad of the year -->
-        <!-- Dissertation
+        <h2>TIGA Postgraduate of the Year 2024</h2>
+        <div>
+            <p class="portfolio">
+                I'm so proud to say that I've been nominated for 2 TIGA awards this year. The Excellence in Games Research Award (read more in the MCOMP Dissertation section below), 
+                and the Postgraduate of the Year award.
+                <br><br><br>
+                The winners will be announced in the autumn of 2024.
+            </p>
 
-        Research Award
-        TIGA nomination
+            <video class="portfolio" src="../videos/PostgradEntry.mp4" controls>
+                Oops! Looks like your browser doesn't support HTML5 videos!
+            </video>
+        </div>
 
-    -->
-        <!-- Ray marching
+        <h2>MCOMP Dissertation</h2>
+        <div>
+            <p class="portfolio">
+                My research was awarded the Outstanding Research Award at Sheffield Hallam University’s Game Over 2024 event, and is nominated for this year's TIGA Excellence in
+                Games Research Award. I hope that my findings can inform future research and aid development of an esports training framework, which existing literature
+                indicates would be highly beneficial.
+                <br><br><br>
+                You are able to download a copy of my dissertation using the link below. It's quite a large document so only the introduction is available to read here.
+            </p>
 
-        Constructive solid geometry
-        Shape blending
-        Domain repetition
-        Mandelbulb
-    -->
-        <!-- Parallelism
+            <video class="portfolio" src="../videos/ResearchEntry.mp4" controls>
+                Oops! Looks like your browser doesn't support HTML5 videos!
+            </video>
+        </div>
 
-        Particle system
-        Ray tracer
-    -->
+        <iframe class="portfolio" src="dissertationDoc.html">
+        </iframe>
+
+        <h2>Samaritan Graphics Research Framework</h2>
+        <div>
+            <p>
+                My master's degree required lots of independent research. This inspired me to create Samaritan, an application framework built from scratch in C++. Samaritan can
+                render using either DX12 or Vulkan, allowing me to conduct comparative analysis between API's. I hope to turn Samaritan into a tool that new developers can use
+                when they begin studying graphics concepts at university.
+            </p>
+        </div>
+
+        <h2>Ray marching</h2>
+        <div>
+            <p class="portfolio">
+                I used my Samaritan research framework to build a ray marching engine using DX12 to render.
+                <br><br><br>
+                I demonstrated the way ray marching allows the simple calculation of shadows by marching towards each light source. I then demonstrated how we can estimate shadow
+                strength by defining it as proportional to the distance to the surface over the distance along the ray.
+            </p>
+
+            <img src="../images/SoftShadows.png" alt="An example of soft shadows." class="portfolio" />
+        </div>
+
+        <div>
+            <p class="portfolio">
+                I then demonstrated Constructive Solid Geometry (CSG), which is the concept of constructing complex shapes from simple shapes. When using ray marching, this can be
+                achieved using simple Boolen operations such as intersection.
+                <br><br><br>
+                Intersection is essentially a max function, union is a min function, and difference is the max of x, -y. As shown in the image, these functions provide quite a
+                sharp edge where the shapes meet. This can be mitigated with a smoothing function.
+            </p>
+
+            <img src="../images/CSG.png" alt="An example of CSG." class="portfolio" />
+        </div>
+
+        <div>
+            <p class="portfolio">
+                I devloped my own smooth minimum function using existing mathematics research to support my methods. Described here from top - bottom, left - right.
+                <br><br><br>
+                Using my Union function as a base (green curve), I transformed the associated curve by clamping its gradient between 0 and 1, then transforming by 0.5
+                so that the x/y intersection occurs at 0.5 rather than 0. This produces the purple curve.
+                <br><br><br>
+                Putting that together gives us the red curve in the bottom left. We can smooth out the bump using a curve which is 0 at the start and end of the bump. I refer to
+                this as the local maxima (black curve). Combining this curve with the smooth-ish curve gives us the final smooth union curve in red on the bottom right.
+            </p>
+            <img src="../images/SmoothUnion.png" alt="The development of my smooth union function." class="portfolio" />
+        </div>
+
+        <div>
+            <p class="portfolio">
+                I've compared my smooth union with that of Inigo Quilez, and of the videogame Dreams, which uses a very similar approach to Quilez.
+                <br><br><br>
+                While certainly not perfect, my smooth union is a success!
+            </p>
+            <img src="../images/SmoothUnion.gif" alt="A GIF of smooth unions in action." class="portfolio" />
+        </div>
+
+        <div>
+            <p class="portfolio">
+                Continuing my ray marching research, I demonstrated domain repetition. This is a bonus of ray marching, which allows the repetition of geometry for no extra cost.
+                <br><br><br>
+                This works because we transform the ray intersection point before caluclating the Signed Distance Field of the shape which we wish to draw. This calculation has
+                to happen regardless of whether we run the transformation function, so the repetition is basically free.
+            </p>
+            <img src="../images/DomainRepetition.gif" alt="A GIF of domain repetition in action." class="portfolio" />
+        </div>
+
+        <div>
+            <p class="portfolio">
+                My maths research inspired me to take this further, and I attempted to render a Mandlebulb. This involves transforming the point with a rotation and scale, after
+                having converted to polar coordinates.
+                <br><br><br>
+                I based my formula for the Mandebulb on several sources online listed below. The result of a power of 2 transformation is clearly related to the original Mandlebrot,
+                whereas the 8th power produces the Mandlebulb first proposed by David White.
+            </p>
+            <img src="../images/Mandelbrot.png" alt="The 3D Mandelbrot set." class="portfolio" />
+        </div>
+
+        <div>
+            <p class="portfolio">
+                Sources:
+                <br><br>
+                Cornell University. (n.d.). Julia Sets and the Mandlebrot Set. Cornell.edu:
+                https://e.math.cornell.edu/people/belk/dynamicalsystems/NotesJuliaMandelbrot.pdf
+                <br><br>
+                Semrau, A., & Sawicki, D. (n.d.). EƯiciency of 3D Fractal Generation Through Raymarching. 19th
+                International Joint Conference on Computer Vision, Imaging and Computer Graphics
+                Theory and Applications. 2024. https://doi.org/10.5220/0012380500003660
+                <br><br>
+                https://iquilezles.org/
+            </p>
+            <img src="../images/Mandelbulb.png" alt="The Mandelbulb." class="portfolio" />
+        </div>
+
+        <h2>Parallelism</h2>
+        <div>
+            <p>
+                I completed two pieces of research demonstrating the effectiveness of different parallel programming techniques. Both were built within my Samaritan framework.
+            </p>
+        </div>
+        <div>
+            <p class="portfolio">
+                The first demonstrated Vulkan compute by implementing a particle system with approximately 8 million particles. The GPU was saturated using workgroup invocation
+                tuning which queries the GPU workgroup invocation limit and then divides that by the number of particles. This means that in the worst case, only one workgroup
+                will be partially utilised.
+                <br><br><br>
+                The system also utilises a Vulkan extension to mitigate control divergence using subgroup polling. This doesn't necessarily speed up the application, but it does
+                improve large frame time spikes that can occur in workgroups with lots of branching. More detail can be found in the full report at the end of this entry, which
+                was submitted as part of my master's degree.
+            </p>
+
+            <img src="../images/ParticleSystem.gif" alt="A GIF of my particle system." class="portfolio" />
+        </div>
+
+        <div>
+            <p class="portfolio">
+                For the second, I created a CPU-based ray tracer with the aim of demonstrating a custom job system. I compared my job system with std::execution::par, which can be
+                used within rang-based for loops to provide parallelism with little effort on the part of the programmer.
+                <br><br><br>
+                It is still the responsibility of the programmer to ensure that the task is suitable for threading,
+                but the STL provides a good middle ground in cases where the cost/benefit ratio of development means a job system isn't suitable.
+            </p>
+
+            <img src="../images/Threadpool.gif" alt="A GIF of my threaded CPU ray tracer." class="portfolio" />
+        </div>
+
+        <iframe class="portfolio" src="gfxDoc.html">
+        </iframe>
+
         <h2>Industry Placement - Sumo Digital, Sheffield</h2>
         <div>
             <p class="portfolio">
@@ -52,9 +192,9 @@
         <h2>Zool Redimensioned Port</h2>
         <div>
             <p class="portfolio">
-                Working in Sheffield Hallam University's game studio, Steel Minions, I and 9 other students created 2 ports of Sumo Digital Academy's DX11 version of Zool Redimensioned.
-                One port was made for Vulkan, and the other was made for the PS4. My team focused on the Vulkan port, and most of my work was on converting the display manager
-                and swapchain to Vulkan.
+                Working in Sheffield Hallam University's game studio, Steel Minions, I and 9 other students created 2 ports of Sumo Digital Academy's DX11 version of Zool
+                Redimensioned. One port was made for Vulkan, and the other was made for the PS4. My team focused on the Vulkan port, and most of my work was on converting
+                the display manager and swapchain to Vulkan.
                 <br><br><br>
                 The project was a finalist at the TIGA UK Games Education Awards 2022 in the Industry Collaboration category.
                 The project also earned second place in the Games Technology category at Games Republic 2022. The PS4 version was later released in May 2023, which gave me my
