@@ -1,7 +1,7 @@
 ﻿
 p.about
 {
-    margin: auto 2.5%;
+    margin: 2.5% auto auto 2.5%;
     max-width: 45%;
     height: auto;
 }

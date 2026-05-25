@@ -54,16 +54,6 @@ a.contact
         transition: 0.25s ease;
     }
 
-    a:hover h3.contact
-    {
-        opacity: 1;
-    }
-
-    a:focus h3.contact
-    {
-        opacity: 1;
-    }
-
 @media screen and (max-width: 1000px) 
 {
     h3.contact 
